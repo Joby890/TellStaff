@@ -1,5 +1,17 @@
 package com.gmail.crash1703.TellStaff;
-                                                                                                         																																																												
+
+  /* Copyright (C) 2013 AnUnknownMiner
+ * 
+ * All rights reserved unless otherwise explicitly stated!
+ * 
+ * This program is free software, that's fun right?
+ * 
+ * Otherwise Stated Part:
+ * 
+ *  Modification of this plugin is ALLOWED, ONLY through GitHub's support system.
+ *  All types of reproduction of this plugin or "knockoff" type under a different 
+ *  name and/or author is prohibited, and will proper action will be taken.
+ */                                                                                                       																																																												
 
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.java.JavaPlugin;
