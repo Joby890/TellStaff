@@ -24,34 +24,26 @@ import org.bukkit.configuration.file.FileConfiguration;
 import java.util.logging.Logger;
 
 
-public final class TellStaff extends JavaPlugin
-    implements Listener
-{
-	public void Main()
-    {
-       server = getServer();
-       Bukkit.getServer().getOnlinePlayers();
-    }
-	@Override
+public class TellStaff extends JavaPlugin implements Listener {
+
+
 	public void onEnable() {
 		getCommand("tellstaff").setExecutor(new TellStaff_Other (this));
 		PluginDescriptionFile pdfFile = getDescription();
 		logger.info((new StringBuilder(String.valueOf(pdfFile.getName()))).append(" version ").append(pdfFile.getVersion()).append(" has been enabled!").toString());
 		FileConfiguration config = getConfig();
-        config.options().copyDefaults(true);
-        saveConfig();
-        this.reloadConfig();
+                config.options().copyDefaults(true);
+                saveConfig();
+                this.reloadConfig();
 	}
-	@Override
+	
 	public void onDisable() {
 		PluginDescriptionFile pdfFile = getDescription();
 		logger.info((new StringBuilder(String.valueOf(pdfFile.getName()))).append(" version ").append(pdfFile.getVersion()).append(" has been disabled!").toString());
 		logger.info("This version of TellStaff is still in Beta stage, more features are to come!");
 		this.saveConfig();
+        }
 
-		
- }
- Server server;
  public final Logger logger = Logger.getLogger("Minecraft");
  public static Mark plugin; 
 }
